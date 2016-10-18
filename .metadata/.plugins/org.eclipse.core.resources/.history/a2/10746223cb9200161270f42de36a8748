@@ -1,0 +1,32 @@
+package agh.data;
+
+
+
+public class V1 extends Base {
+	
+	private void increment(){
+		callIncrement();
+		System.out.println("V1 ");
+	}
+
+	
+	protected void ddecrement(){
+		callDecrement();
+	}
+
+	  
+	void changeName(String Name){
+		callChangeName(Name);
+		
+	}
+	 public static void main(String[] args){
+		  V1 baza=new V1();
+		  //baza.changeName("jakasnazwa");
+		  baza.ddecrement();
+		  baza.ddecrement();
+		  System.out.println(baza);
+		  
+	  }
+	
+	
+}

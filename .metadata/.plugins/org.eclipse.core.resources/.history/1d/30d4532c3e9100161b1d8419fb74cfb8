@@ -1,0 +1,26 @@
+class PersonBulider{
+		private Person person;
+		
+		public PersonBulider(){
+		person=new Person();	
+		}
+		
+		public Person bulid(){
+			 return person;
+		}
+	
+		public PersonBulider withName(String Name){
+			person.setName(Name);
+			return this;
+		}
+		
+		public PersonBulider withAge(int Age){
+			person.setNr(Age);
+			return this;
+		}
+		
+		public PersonBulider withSurname(String Surname){
+			person.setSurname(Surname);
+			return this;
+		}
+}

@@ -1,0 +1,30 @@
+import java.util.Comparator;
+
+public class OddNumberComp implements Comparator<Integer> {
+
+
+	public  int compare(Integer a, Integer b)
+    {
+		if((b % 2 != 0)&&(a % 2 != 0)){
+			if(a>b)
+				return 1;
+			if(a<b)
+				return -1;
+		}
+	          
+		if((b % 2 != 0)||(a % 2 != 0)){
+			if(b % 2 != 0)
+		           return -1;
+			if(a % 2 != 0)
+		           return 1;
+		}
+		else {
+			if(a>b)
+				return 1;
+			if(a<b)
+				return -1;
+		}
+		return 0;
+    }
+
+}

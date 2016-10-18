@@ -1,0 +1,12 @@
+import javax.swing.text.Document;
+
+import org.w3c.dom.ranges.DocumentRange;
+
+public class Apllication {
+
+	public static void main(String[] args) {
+		System.out.print("print");
+
+	}
+
+}

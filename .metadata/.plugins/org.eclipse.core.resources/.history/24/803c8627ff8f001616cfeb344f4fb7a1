@@ -1,0 +1,45 @@
+import javax.swing.text.Document;
+
+import org.w3c.dom.ranges.DocumentRange;
+
+public class Apllication {
+
+	public static void main(String[] args) {
+		Person osoba1 =new Person();
+		osoba1.setName("Jan");
+		osoba1.setNr(34);
+		osoba1.setSurname("Duda");
+	    osoba1.setPesel("432423");
+	    System.out.println(osoba1);
+	}
+
+}
+
+class Person{
+	private int nr;
+	private	String name;
+	private	String surname;
+	private String pesel;
+	
+	public  void setName( String name ){
+		this.name=name;
+		
+	}
+	public  void setSurname( String surname ){
+		this.surname=surname;
+		
+	}
+	public  void setPesel( String pesel ){
+		this.pesel=pesel;
+		
+	}
+	public  void setNr( int nr ){
+		this.nr=nr;
+		
+	}
+	
+	public String toString(){
+		return name+" "+surname+" nr:"+nr+" Pesel:"+pesel;
+	}
+	
+}

@@ -1,0 +1,19 @@
+import javax.swing.text.Document;
+
+import org.w3c.dom.ranges.DocumentRange;
+
+public class Apllication {
+
+	public static void main(String[] args) {
+		try{
+		Person osoba1 =new PersonBulider().withAge(34).withName("").withSurname("Klarol").bulid();
+	    System.out.println(osoba1);
+	}
+
+		catch(Exception e){
+			System.out.println(e);
+		}
+}
+}
+
+	

@@ -1,0 +1,47 @@
+package agh.data;
+
+public class Base {
+  private int Value ;
+  String Name;
+    
+  public void callChangeName(String Name){
+	  changeName(Name);
+	  System.out.println("Baza ");
+  }
+  
+  public void callIncrement(){
+	  increment();
+  }
+  
+  public void callDecrement(){
+	  decrement();
+  }
+  
+  private void increment(){
+	  this.Value+=1;
+  }
+
+   protected void decrement(){
+	  this.Value-=1;
+  }
+
+   void changeName(String Name){
+	   this.Name=Name;	   	   
+   }
+   
+   public String toString(){
+	   return Value+"   "+Name;  
+   }
+  public static void main(String[] args){
+	  Base baza=new Base();
+	  baza.callChangeName("jakasnazwa");
+	  baza.callIncrement();
+	  baza.callIncrement();
+	  System.out.println(baza);
+	  
+  }
+}
+
+
+
+

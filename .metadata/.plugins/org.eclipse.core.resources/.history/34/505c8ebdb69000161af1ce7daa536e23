@@ -1,0 +1,67 @@
+import javax.swing.text.Document;
+
+import org.w3c.dom.ranges.DocumentRange;
+
+public class Apllication {
+
+	public static void main(String[] args) {
+		Person osoba1 =new PersonBulider().withAge(34).withName("Maks").withSurname("Karol").bulid();
+		
+	    System.out.println(osoba1);
+	}
+
+}
+
+class Person{
+	private int nr;
+	private	String name;
+	private	String surname;
+	private String pesel;
+	
+	public  void setName( String name ){
+		this.name=name;
+		
+	}
+	public  void setSurname( String surname ){
+		this.surname=surname;
+		
+	}
+	public  void setPesel( String pesel ){
+		this.pesel=pesel;
+		
+	}
+	public  void setNr( int nr ){
+		this.nr=nr;
+		
+	}
+	public String toString(){
+		return name+" "+surname+" nr:"+nr+" Pesel:"+pesel;
+     }
+			}
+	
+	class PersonBulider{
+		private Person person;
+		
+		public PersonBulider(){
+		person=new Person();	
+		}
+		
+		public Person bulid(){
+			 return person;
+		}
+	
+		public PersonBulider withName(String Name){
+			person.setName(Name);
+			return this;
+		}
+		
+		public PersonBulider withAge(int Age){
+			person.setNr(Age);
+			return this;
+		}
+		
+		public PersonBulider withSurname(String Surname){
+			person.setSurname(Surname);
+			return this;
+		}
+}

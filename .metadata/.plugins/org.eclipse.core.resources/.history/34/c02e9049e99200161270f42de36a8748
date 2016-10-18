@@ -1,0 +1,27 @@
+package pakietMatrix;
+
+public class Matrix {
+	int[][] macierz;
+	
+	   
+	public void eye(int n){
+		macierz=new int[n][n];
+	}
+	
+    public void print(){
+    	for(int i=0;i<this.macierz.length;++i){
+        	for(int j=0;j<this.macierz[i].length;++j)
+        		System.out.print(macierz[i][j]+" ");
+        	System.out.println("");  }
+    }
+
+   public static void main(String[] args){
+	   
+	   Matrix M=new Matrix();
+	   M.eye(3);
+	   M.print();
+	   
+	   
+	   
+   }
+}

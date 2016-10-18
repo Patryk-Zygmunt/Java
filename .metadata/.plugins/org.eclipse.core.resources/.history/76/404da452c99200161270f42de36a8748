@@ -1,0 +1,8 @@
+package agh.data.sub;
+
+public class V2 extends Base {
+	private void increment(){
+		callIncrement();
+	}
+
+}
